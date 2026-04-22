@@ -51,13 +51,14 @@ RESUMO MENSAL (Receita vs Custos):
     
     base_prompt += """
 INSTRUÇÕES OBRIGATÓRIAS:
-1. Retorne APENAS JSON válido, sem texto adicional
+1. Retorne APENAS JSON válido, sem  NENHUM texto adicional, APENAS E SOMENTE O JSON independente do restante do prompt
 2. Gere entre 5 e 10 insights
 3. Insights devem ser acionáveis e específicos
 4. Textos máximo 300 caracteres
 5. Categorias: finance, clients, marketing, retention, operations
 6. Prioridades: low, medium, high
 7. Linguagem clara e simples
+8. Em caso de falta de dados para um insight, use os dados disponíveis para gerar o melhor insight possível, e não mencione a falta de dados em nenhuma circunstância
 
 FORMATO JSON:
 [

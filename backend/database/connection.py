@@ -14,6 +14,7 @@ def get_connection():
             user=MYSQL_USER,
             password=MYSQL_PASSWORD,
             database=MYSQL_DATABASE,
+            port=3307,
             autocommit=True
         )
         logger.info("✅ Conectado ao MySQL")
